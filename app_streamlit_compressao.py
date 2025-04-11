@@ -9,7 +9,7 @@ import time
 st.set_page_config(page_title="Simulador de Ensaio de Compressão", layout="wide")
 st.title("Simulador de Ensaio de Compressão de Materiais")
 
-st.markdown("**1 - Selecione o material.**2 - Clique em Iniciar Ensaio.**")
+st.markdown("**1 - Selecione o material.**\n\n**2 - Clique em Iniciar Ensaio.**")
 
 # Propriedades dos materiais
 MATERIAIS = {
@@ -71,7 +71,7 @@ if st.button("Iniciar Ensaio"):
         # Gráfico
         ax1.plot(delta_L[:i], tensao[:i], color=cor)
         ax1.set_title(f"Ensaio de Compressão - {material} (∆L × Tensão)")
-        ax1.set_xlabel("Deformação Real ∆L (mm)\n------------------------\nwww.mestre-federal.com\nProf. Valdemir - IFSP - Campus Guarulhos")
+        ax1.set_xlabel("Deformação Real ∆L (mm)\nwww.mestre-federal.com\nProf. Valdemir - IFSP - Campus Guarulhos")
         ax1.set_ylabel("Tensão (MPa)")
         ax1.set_xlim(0, deltaL_ruptura * 1.05)
         ax1.set_ylim(0, tensao_ruptura * 1.2)
