@@ -8,9 +8,8 @@ import time
 
 st.set_page_config(page_title="Simulador de Ensaio de Compressão", layout="wide")
 st.title("Simulador de Ensaio de Compressão de Materiais")
-st.caption("www.mestre-federal.com - Prof. Valdemir - IFSP - Campus Guarulhos")
 
-st.markdown("**1 - Selecione o material.**\n\n**2 - Clique em Iniciar Ensaio.**")
+st.markdown("**1 - Selecione o material.**2 - Clique em Iniciar Ensaio.**")
 
 # Propriedades dos materiais
 MATERIAIS = {
